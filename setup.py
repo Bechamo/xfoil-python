@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 #   Copyright (c) 2019 D. de Vries
+#   Copyright (c) 2021 kaliko <kaliko@azylum.org>
 #
 #   This file is part of XFoil.
 #
@@ -146,5 +147,5 @@ setup(
     ext_modules=[CMakeExtension('xfoil.xfoil')],
     cmdclass={'build_ext': CMakeBuild},
     install_requires=['numpy'],
-    zip_save=False
+    zip_safe=False
 )
